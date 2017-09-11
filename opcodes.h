@@ -3,8 +3,6 @@
 
 #include "instruction.h"
 
-
-
 enum opcodes {
 	ADD, SUB, MUL, LD, SD, JMP, BEQZ, HLT
 }
