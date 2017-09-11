@@ -1,3 +1,6 @@
+#ifndef INSTRUCTION_H
+#define INSTRUCTION_H
+
 #define CSTART 0
 #define CEND (CSTART+2)
 #define CSIZE (CEND-CSTART+1)
@@ -27,3 +30,5 @@ struct instruction {
 };
 
 typedef struct instruction InstructionType;
+
+#endif
