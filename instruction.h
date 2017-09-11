@@ -19,11 +19,11 @@
 #define OP3SIZE (OP3END-OP3START+1)
 
 struct instruction {
-	int opcode:3,
-	int immFlag:1,
-	int op1:4,
-	int op2:4,
-	int op3:4
+	int opcode:CSIZE,
+	int immFlag:ISIZE,
+	int op1:OP1SIZE,
+	int op2:OP2SIZE,
+	int op3:OP3SIZE
 };
 
 typedef struct instruction InstructionType;
