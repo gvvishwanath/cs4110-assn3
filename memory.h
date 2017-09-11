@@ -11,12 +11,12 @@
 
 char memory[MEM_SIZE];
 
-void loadBinary (char *binary);
+void loadBinary (InstructionType *binary, short int length);
 
 void loadValue (short int location, short int nBytes);
 void storeValue (short int location, short int nBytes, short int value);
 
 short int getLabel (InstructionType instr);
-void setLabel (InstructionType instr, char *label, char *binary);
+void setLabel (InstructionType instr, char *label, char *asmCode);
 
 #endif
