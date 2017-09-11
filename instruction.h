@@ -28,7 +28,6 @@ struct instruction {
 	int op2:OP2SIZE,
 	int op3:OP3SIZE
 };
-
 typedef struct instruction InstructionType;
 
 #endif

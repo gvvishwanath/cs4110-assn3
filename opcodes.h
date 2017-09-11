@@ -3,18 +3,12 @@
 
 #include "instruction.h"
 
-typedef short int OpcodeType;
-
-#define ADD 0
-#define SUB 1
-#define MUL 2
-#define LD 3
-#define SD 4
-#define JMP 5
-#define BEQZ 6
-#define HLT 7
+enum opcodes {
+	ADD, SUB, MUL, LD, SD, JMP, BEQZ, HLT
+}
+typedef enum opcodes OpcodeType;
 
 OpcodeType getOpcode (InstructionType instr);
-void setOpcode (InstructionType instruction, char *instrWord);
+void setOpcode (InstructionType instr, char *instrWord);
 
 #endif
