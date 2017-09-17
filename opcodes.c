@@ -1,4 +1,5 @@
 #include "opcodes.h"
+#include <stdio.h>
 
 OpcodeType getOpcode (InstructionType instr) {
 	int shift = ISIZE + OP1SIZE + OP2SIZE + OP3SIZE;
