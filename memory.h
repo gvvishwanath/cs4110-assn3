@@ -13,7 +13,7 @@ short int memory[MEM_SIZE/sizeof short int];
 
 void loadBinary (InstructionType *binary, short int length);
 
-void loadValue (short int location, short int nBytes);
+short int loadValue (short int location, short int nBytes);
 void storeValue (short int location, short int nBytes, short int value);
 
 short int getLabel (InstructionType instr);
