@@ -1,4 +1,5 @@
 #include "immediate.h"
+#include <stdib.h>
 
 short int getImmOp (InstructionType instr) {
 	int shift = CSIZE + ISIZE + OP1SIZE + OP2SIZE;
