@@ -9,7 +9,7 @@
 #define DATA_END 1023
 #define MEM_SIZE 1024
 
-char memory[MEM_SIZE];
+short int memory[MEM_SIZE/sizeof short int];
 
 void loadBinary (InstructionType *binary, short int length);
 
