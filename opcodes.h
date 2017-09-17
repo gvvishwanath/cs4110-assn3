@@ -4,7 +4,7 @@
 #include "instruction.h"
 
 enum opcodes {
-	ADD, SUB, MUL, LD, SD, JMP, BEQZ, HLT
+	ADD, SUB, MUL, LD, SD, JMP, BEQZ, HLT, INVALID
 }
 typedef enum opcodes OpcodeType;
 
