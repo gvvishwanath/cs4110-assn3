@@ -19,7 +19,7 @@ void initPorts (void);
 void initRegFile (char *regFile);
 
 short int getRegIndex (InstructionType instr, short int opNum);
-void setRegIndex (InstructionType instr, short int opNum, char *regWord);
+void setRegIndex (InstructionType *instr, short int opNum, char *regWord);
 
 short int readRegValue (short int index);
 void writeRegValue (short int index, short int value);
