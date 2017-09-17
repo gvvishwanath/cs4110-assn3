@@ -9,6 +9,6 @@ enum opcodes {
 typedef enum opcodes OpcodeType;
 
 OpcodeType getOpcode (InstructionType instr);
-void setOpcode (InstructionType instr, char *instrWord);
+void setOpcode (InstructionType *instr, char *instrWord);
 
 #endif
